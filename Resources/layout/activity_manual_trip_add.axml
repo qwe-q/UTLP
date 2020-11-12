@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    
+    
+    <LinearLayout
+            android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+    <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="none"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:id="@+id/MilesText" android:text="@string/TripDestination" android:layout_marginTop="25sp" android:textSize="25sp"/>
+
+    <EditText
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="none"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:id="@+id/TripDestination" android:hint="@string/TripDestinationUnits" android:textStyle="normal"/>
+
+    <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="none"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:id="@+id/MilesText" android:text="@string/TripMilesDriven" android:layout_marginTop="25sp" android:textSize="25sp"/>
+    
+    <EditText
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="none"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/TripMilesDriven" android:hint="@string/TripMilesDrivenUnits" android:textStyle="normal"/>
+        
+    <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="none"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:id="@+id/MilesText" android:text="@string/TripMPG" android:layout_marginTop="25sp" android:textSize="25sp"/>
+    <EditText
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="none"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/TripMPG" android:hint="@string/TripMPGUnits" android:textStyle="normal"/>
+    
+    <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="none"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:id="@+id/MilesText" android:text="@string/TripLength" android:layout_marginTop="25sp" android:textSize="25sp"/>
+    <EditText
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="none"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/TripLength" android:hint="@string/TripLengthUnits" android:textStyle="normal"/>
+    </LinearLayout>
+
+    <Button
+            android:text="@string/TripSaveButton"
+            android:layout_width="match_parent"
+            android:layout_height="65.0dp" android:id="@+id/TripSaveButton" android:layout_gravity="bottom" style="@android:style/Widget.Material.Button.Colored" android:textSize="20sp"/>
+</FrameLayout>

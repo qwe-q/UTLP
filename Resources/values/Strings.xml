@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">UTLP</string>
+    <string name="action_settings">Settings</string>
+    <string name="ManualAddTripTitle">Add Trip Manually</string>
+    
+    <string name="TripDestination">Trip Destination</string>
+    <string name="TripMilesDriven">Miles Driven</string>
+    <string name="TripMPG">Miles Per Gallon</string>
+    <string name="TripLength">Time Elapsed</string>
+    <string name="TripSaveButton">Save</string>
+
+    <string name="TripDestinationUnits">Name of Destination</string>
+    <string name="TripMilesDrivenUnits">Miles</string>
+    <string name="TripMPGUnits">MPG</string>
+    <string name="TripLengthUnits">hr:min:sec</string>
+</resources>
