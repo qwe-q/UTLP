@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Android.App;
 using Android.OS;
 using Android.Support.V7.App;
@@ -34,8 +35,15 @@ namespace UTLP
                 Trip.TimeElapsed = FindViewById<EditText>(Resource.Id.TripLength).Text;
 
                 string Json = JsonConvert.SerializeObject(Trip);
+                var OutPath = Path.Combine(
+                    System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), 
+                    Trip.Date.ToString("yyyy-M-d HH:mm:ss"));
                 
-                
+                //If this causes trouble, switch it to async
+                //Also, we naively assume that a user can't have possibly created two trips in the same second.
+                using (var Writer = File.CreateText(OutPath)) 
+                    Writer.Write(Json);
+
                 Finish(); //We're done, go back
             };
         }
