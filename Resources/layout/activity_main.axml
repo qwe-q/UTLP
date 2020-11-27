@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
     <Button
-            android:text="Button"
+            android:text="Add Trip Test Button"
             android:layout_width="match_parent"
-            android:layout_height="145dp" android:id="@+id/TestButton" android:gravity="center" android:foregroundGravity="center"/>
-</RelativeLayout>
+            android:layout_height="145dp" android:id="@+id/TestButton1" android:gravity="center" android:foregroundGravity="center"/>
+    <Button
+            android:text="Add Fuel Test Button"
+            android:layout_width="match_parent"
+            android:layout_height="145dp" android:id="@+id/TestButton2" android:gravity="center" android:foregroundGravity="center"/>
+</LinearLayout>

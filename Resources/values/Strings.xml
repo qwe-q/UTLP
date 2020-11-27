@@ -2,6 +2,7 @@
     <string name="app_name">UTLP</string>
     <string name="action_settings">Settings</string>
     <string name="ManualAddTripTitle">Add Trip Manually</string>
+    <string name="FuelAddTitle">Add Fill-Up</string>
     
     <string name="TripDestination">Trip Destination</string>
     <string name="TripMilesDriven">Miles Driven</string>
@@ -13,4 +14,19 @@
     <string name="TripMilesDrivenUnits">Miles</string>
     <string name="TripMPGUnits">MPG</string>
     <string name="TripLengthUnits">hr:min:sec</string>
+    
+    <string name="FuelTotalPrice">Fuel Price</string>
+    <string name="FuelPricePerGallon">Price Per Gallon</string>
+    <string name="FuelGallonsFilled">Gallons Filled</string>
+    <string name="FuelCurrentOdometer">Odometer at Time of Fill</string>
+    <string name="FuelCalculatedMilesDriven">Miles Driven Since Last Fill-Up:</string>
+    <string name="FuelCalculatedMPG">Miles per Gallon for Fill-Up:</string>
+
+    <string name="FuelTotalPriceUnits">$</string>
+    <string name="FuelPricePerGallonUnits">$</string>
+    <string name="FuelGallonsFilledUnits">Gallons</string>
+    <string name="FuelCurrentOdometerUnits">Miles</string>
+    
+    <string name="TripDirectory">trips/</string>
+    <string name="FuelDirectory">fuel/</string>
 </resources>

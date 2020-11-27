@@ -37,13 +37,13 @@ namespace UTLP
                 string Json = JsonConvert.SerializeObject(Trip);
                 var OutPath = Path.Combine(
                     System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), 
-                    Trip.Date.ToString("yyyy-M-d HH:mm:ss") + ".json");
+                    Resources.GetString(Resource.String.TripDirectory) + Trip.Date.ToString("yyyy-M-d HH:mm:ss") + ".json");
                 
                 //If this causes trouble, switch it to async
                 //Also, we naively assume that a user can't have possibly created two trips in the same second.
                 using (var Writer = File.CreateText(OutPath)) 
                     Writer.Write(Json);
-
+                
                 Finish(); //We're done, go back
             };
         }
