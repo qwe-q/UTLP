@@ -9,14 +9,14 @@ using Android.Widget;
 
 namespace UTLP
 {
-    [Activity(Label = "@string/CarAddTitle", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+    [Activity(Label = "@string/CarAddTitle", Theme = "@style/AppTheme.NoActionBar")]
     public class CarAddActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            SetContentView(Resource.Layout.activity_main);
+            SetContentView(Resource.Layout.activity_car_add);
 
             Android.Support.V7.Widget.Toolbar toolbar = 
                 FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
