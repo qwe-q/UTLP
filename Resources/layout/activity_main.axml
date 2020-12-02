@@ -12,4 +12,10 @@
             android:text="Add Fuel Test Button"
             android:layout_width="match_parent"
             android:layout_height="145dp" android:id="@+id/TestButton2" android:gravity="center" android:foregroundGravity="center"/>
+    <Button
+            android:text="Add Fuel Test Button"
+            android:layout_width="match_parent"
+            android:layout_height="145dp" android:id="@+id/TestButton3" android:gravity="center" android:foregroundGravity="center"/>
+
+
 </LinearLayout>
